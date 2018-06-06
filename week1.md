@@ -2,13 +2,12 @@
 
 This cohort, Ada taught [React](https://reactjs.org/) as our front-end JavaScript framework for the first time. We're now at the end of the first week and I would say it went well - the students seem to have a solid understanding of the basics of React. Perhaps more importantly, students _enjoyed_ the content and are excited about learning more. If that's not a successful rollout then I don't know what is.
 
-As with any new product we learned a lot from this initial run through the curriculum, both about what went well and what we could improve. The big lessons can be divided into five main categories:
+As with any new product we learned a lot from this initial run through the curriculum, both about what went well and what we could improve. The big lessons can be divided into four main categories:
 
 - Go slow and focus on the fundamentals
 - Give lots opportunities to practice
 - Be careful about naming conventions
 - Use more visuals
-- Forms are hard
 
 To give a little context about the program, this was week 17 of our 24-week program. Our adult students are with us 8 hours a day, 5 days a week. Prior to React we had 14 weeks of Ruby and Rails, and 2 weeks of vanilla JavaScript and jQuery.
 
@@ -18,7 +17,7 @@ The number one complaint we get from students about lessons is that we introduce
 
 On the other hand when we build a sequence of lessons slowly, applying a laser focus to each individual learning goal, we find that we actually save time in the long run. Taking this measured approach allows students to understand _why_ they're writing the code they write, and how it fits into the big picture. That means they can apply the techniques more broadly, and when we build upon them in a future lesson things go much more smoothly.
 
-With that in mind, we were intentional about easing into React. Our schedule looked something like this:
+With that in mind, we were intentional about easing into React. The schedule we ended up with looked something like this:
 
 - **Day 1:** What is React? How do you build static components? How does JSX work? How do you use `props`?
 - **Day 2:** Adding CSS, using `PropTypes`. Go through a big worksheet of static components.
@@ -28,7 +27,11 @@ With that in mind, we were intentional about easing into React. Our schedule loo
 
 We spent _two whole days_ writing static components before we even told them that `state` was a thing. This may seem arduous - for comparison, the [official React tutorial](https://reactjs.org/tutorial/tutorial.html) introduces both `props` and `state` right away. However, I believe that the time was well-spent.
 
-Taking that extra time allowed us to focus on some of the common patterns in React, like using `map` to transform data into an array of components. This is the sort of technique it would be easy to ignore as "just a React thing", especially for students who are still reeling from the idea of functions as first-class objects. It was absolutely worth the time to connect it back to prior learning, and I think most students ended up with a stronger understanding of JavaScript and of React as a result.
+Taking that extra time allowed us to focus on some of the common patterns in React, like using `map` to transform data into an array of components. This is the sort of technique it would be easy to ignore as "just a React thing", especially for students who are still reeling from the idea of functions as first-class objects. It was absolutely worth the time to connect it back to prior learning, and I think most students ended up with a stronger understanding of JavaScript.
+
+The one place where we didn't do this initially was our discussion of controlled forms. Our vision for that lesson and the associated project was a overly complex. Moreover Thursday is a short day for us at Ada, and we thought we could cover all the content in an hour and a half. Long story short, we were wrong.
+
+Our staff did a good job of assessing student understanding in the moment, and we made the call to spend a good chunk of Friday morning talking about forms as well. This means we didn't have nearly as much project time as we would have liked, but it did give us the opportunity to double down on event handling and callbacks, making the connection both to previous event handling in React and to JavaScript fundamentals.
 
 ## Practice, Practice, Practice
 
@@ -102,10 +105,10 @@ There's also a lot that it leaves out, including component state and many of the
 
 There were several diagrams like this that arose in the moment, as a response to student confusion. Cleaning them up and adding them to our formal curriculum is going to be part of the work we do before we teach React again in December.
 
-## Form Follows Function
-
-
-
 ## Conclusion
 
-Now our job is to take those learnings and apply them, both to the rest of this cohort's curriculum and to our next pass in 6 months.
+Teaching React for the first time has been an enjoyable experience. Our team worked super hard getting this ready, and showed impressive wisdom and experience choosing what to cover and how to present it. Though there were inevitably some small things that could have gone better, adjustments going forward will be fine-tuning, not a total restructuring.
+
+For me the four big takeaways boil down to a fundamental truth about teaching: it's better to go a little slower, cement understanding, and tie things in to prior learning. That means being conscious of where students are and what will be hard for them, and taking the time to build the curriculum to match. It's hard work, but no one ever took a teaching gig because it was easy.
+
+Our job now is to take those learnings and apply them. We get a chance immediately as we continue to work with cohort 9, and in 6 months when cohort 10 gets to this point. I for one am excited to see how it goes from here.
