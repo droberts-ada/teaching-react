@@ -11,6 +11,8 @@ As with any new product we learned a lot from this initial run through the curri
 
 To give a little context about the program, this was week 17 of our 24-week program. Our adult students are with us 8 hours a day, 5 days a week. Prior to React we had 14 weeks of Ruby and Rails, and 2 weeks of vanilla JavaScript and jQuery.
 
+If you're interested in seeing what we've come up with, our textbook is [free and open-source on GitHub](https://github.com/Ada-Developers-Academy/textbook-curriculum/tree/master/React).
+
 ## Slow and Steady Wins the Race
 
 The number one complaint we get from students about lessons is that we introduce too many new things at once. Ideas get conflated, false associations are built, and students end up unable to apply concepts in different situations.
