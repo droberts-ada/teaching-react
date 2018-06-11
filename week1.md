@@ -9,7 +9,7 @@ As with any new product we learned a lot from this initial run through the curri
 - Be careful about naming conventions
 - Use more visuals
 
-To give a little context about the program, this was week 17 of our 24-week program. Our adult students are with us 8 hours a day, 5 days a week. Prior to React we had 14 weeks of Ruby and Rails, and 2 weeks of vanilla JavaScript and jQuery.
+To give a little context, React started in week 17 of our 24-week program. Our adult students are with us 8 hours a day 5 days a week, so by this point they've done a fair bit of programming. Prior to React we had 14 weeks of Ruby and Rails, and 2 weeks of vanilla JavaScript and jQuery.
 
 If you're interested in seeing what we've come up with, our textbook is [free and open-source on GitHub](https://github.com/Ada-Developers-Academy/textbook-curriculum/tree/master/React).
 
@@ -29,9 +29,9 @@ With that in mind, we were intentional about easing into React. The schedule we 
 
 We spent _two whole days_ writing static components before we even told them that `state` was a thing. This may seem arduous - for comparison, the [official React tutorial](https://reactjs.org/tutorial/tutorial.html) introduces both `props` and `state` right away. However, I believe that the time was well-spent.
 
-Taking that extra time allowed us to focus on some of the common patterns in React, like using `map` to transform data into an array of components. This is the sort of technique it would be easy to ignore as "just a React thing", especially for students who are still reeling from the idea of functions as first-class objects. It was absolutely worth the time to connect it back to prior learning, and I think most students ended up with a stronger understanding of JavaScript.
+Taking that extra time allowed us to focus on some of the common patterns in React, like using `map` to transform data into an array of components. This sort of technique would be easy to ignore as "just a React thing", especially for students who are still reeling from the idea of functions as first-class objects. It was absolutely worth the time to connect it back to prior learning, and I think most students ended up with a stronger understanding of JavaScript as a result.
 
-The one place where we didn't do this initially was our discussion of controlled forms. Our vision for that lesson and the associated project was a overly complex. Moreover Thursday is a short day for us at Ada, and we thought we could cover all the content in an hour and a half. Long story short, we were wrong.
+One place where we could have done better with this was our discussion of [controlled forms](https://reactjs.org/docs/forms.html). Thursday is a short day for us at Ada, and we thought we could cover the content in an hour and a half. If we had just been memorizing patterns this would have been fine, but it wasn't enough time to truly understand the concept.
 
 Our staff did a good job of assessing student understanding in the moment, and we made the call to spend a good chunk of Friday morning talking about forms as well. This means we didn't have nearly as much project time as we would have liked, but it did give us the opportunity to double down on event handling and callbacks, making the connection both to previous event handling in React and to JavaScript fundamentals.
 
@@ -46,11 +46,11 @@ Here is the general strategy:
   - Start with "fill in the render functions on these two components"
   - Move towards "here is a list of components to build"
 
-As an example, take the [Litter Patrol](https://github.com/Adagold/litter-patrol) assignment from day 3. Most of the structure of the app is already there, but the students must implement state management (points, litter locations), and have to use callbacks to respond to user events in a child component. The project is easy enough to be done in an afternoon but still feels like a complete app.
+As an example, take the [Litter Patrol](https://github.com/Adagold/litter-patrol) assignment from day 3. Most of the structure of the app is already there, but the students must implement state management (points, litter locations), and have to use callbacks to respond to user events in a child component. The project is small enough to be done in an afternoon but still feels like a complete app.
 
 ![Litter Patrol](litter-patrol.gif) _Completed Litter Patrol project_
 
-In practice, this technique seems to have worked very well. We have seen strong retention of the material that feels deeper than rote memorization. One of the big advantages is that it allows us to model high-level project organization, so that even on the last more open-ended project we spent much less time debugging tangled messes than we expected to.
+In practice, this technique seems to have worked very well. We have seen strong retention of the material that feels deeper than rote memorization. One of the big advantages of having many projects was that it allowed us to model high-level organization. This meant that even on the last, more open-ended project we spent much less time debugging tangled messes than we expected to.
 
 The downside of this strategy is that it's a lot of work for the instructional team, both up-front (building and maintaining multiple worksheets, exercises and projects) and in class (keeping track of what's assigned / due when).
 
@@ -58,15 +58,15 @@ To help offset the up-front cost, we've partnered with the bootcamp [Code Platoo
 
 ## Call Me by Your Name
 
-The next lesson is one that took us by surprise but really shouldn't have: [clear naming conventions](https://en.wikipedia.org/wiki/Naming_convention_%28programming%29) are important. In particular, we needed to name things in a way that
+The next lesson is one that took us by surprise but really shouldn't have: [clear naming conventions](https://en.wikipedia.org/wiki/Naming_convention_%28programming%29) are important. In particular, code used in class needs a naming convention that
 
 1. Is consistent
 1. Makes it obvious what each function or variable does
 1. Clarifies where different pieces come from, particularly callback functions and event handlers
 
-Our instructional team has many collective years of professional engineering experience, so hitting the first two requirements was a given. However for the third our experience ended up biting us, because what's clear to us is often difficult for our students. A naming convention that's meant to unify may end up sowing confusion.
+Our instructional team has many collective years of professional engineering experience, so hitting the first two requirements was a given. However for the third our experience ended up biting us, because what's clear to us can be unexpectedly difficult for our students. A naming convention that's meant to unify may end up sowing confusion.
 
-Take for example making a DOM event on a child component affect the state of a parent component. To do this, you might need to:
+For example, imagine you needed to modify the state of a parent component in response to a DOM event on a child component. To do this, you might:
 
 1. Define a function in the parent component to manage state
 1. Pass that function as a callback to a child component via `props`
@@ -89,7 +89,7 @@ Following these rules with the buttons example yields [something like this](code
 
 ## A Picture is Worth a Thousand Words
 
-Our final big takeaway from delivering React for the first time is an idea we were already aware of, but teaching something new always hammers it home. [All sorts of research](https://journal.lib.uoguelph.ca/index.php/perj/article/view/3137/3473) has shown that regardless of learning styles, a combination of text and image is the best way to reach pretty much everyone. That means that lessons need pictures: in the textbook, on the whiteboard, and in students' notes.
+Our final big takeaway from delivering React for the first time is that we need more images. [All sorts of research](https://journal.lib.uoguelph.ca/index.php/perj/article/view/3137/3473) has shown that regardless of learning styles, a combination of text and image is the best way to reach pretty much everyone. That means that lessons need pictures: in the textbook, on the whiteboard, and in students' notes. This is something we were already aware of, but teaching new curriculum always hammers it home.
 
 In computer science we face the particular challenge of a topic that is highly abstract and often multi- or a-dimensional. Rapidly branching control flows, complex data structures and intricate sequences of events and callbacks rarely translate cleanly to a whiteboard. However, by keeping things simple and focusing on one process at a time we can help to clarify difficult topics.
 
@@ -111,6 +111,6 @@ There were several diagrams like this that arose in the moment, as a response to
 
 Teaching React for the first time has been an enjoyable experience. Our team worked super hard getting this ready, and showed impressive wisdom and experience choosing what to cover and how to present it. Though there were inevitably some small things that could have gone better, adjustments going forward will be fine-tuning, not a total restructuring.
 
-For me the four big takeaways boil down to a fundamental truth about teaching: it's better to go a little slower, cement understanding, and tie things in to prior learning. That means being conscious of where students are and what will be hard for them, and taking the time to build the curriculum to match. It's hard work, but no one ever took a teaching gig because it was easy.
+For me the four big takeaways boil down to a fundamental truth about teaching: it's almost always better to go a little slower, cement understanding, and tie things in to prior learning. That means being conscious of where students are and what will be hard for them, and taking the time to build the curriculum to match. It's hard work, but no one ever took a teaching gig because it was easy.
 
 Our job now is to take those learnings and apply them. We get a chance immediately as we continue to work with cohort 9, and in 6 months when cohort 10 gets to this point. I for one am excited to see how it goes from here.
